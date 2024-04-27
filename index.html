@@ -79,13 +79,69 @@
         .works {
             color: #ee2046;
             display: flex;
-            column-gap: 21px;
+            column-gap: 40px;
         }
 
         .works a {
             color: #ffffff;
         }
 
+        .project {
+            text-align: center;
+            position: relative;
+        }
+
+        .project::after {
+            content: "";
+            position: absolute;
+            right: -20px;
+            top: 0;
+            bottom: 0px;
+            width: 1px;
+            background: #fff;
+            opacity: .1;
+        }
+
+        .project:last-of-type:after {
+            display: none;
+        }
+
+
+        .project__links {
+            position: relative;
+            font-weight: bold;
+            font-size: .9rem;
+            display: flex;
+            column-gap: 30px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .project__links a::after {
+            content: "-";
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 50%;
+            opacity: .25;
+        }
+
+        .rouh {
+            color: #4dffd7;
+        }
+
+        .jouzia {
+            color: #ff7e2f;
+        }
+
+        .filtah {
+            color: #77b9ff;
+        }
+
+
+        .query {
+            color:#e74c3c;
+        }
 
         footer {
             color: #fff;
@@ -121,6 +177,8 @@
             height:100%;
             width: 100%;
         }
+
+
 
         @media only screen and (max-width: 780px) {
             .logo {
@@ -159,11 +217,49 @@
 
             <nav class="works">
                 <span>Portfolio: </span>
-                <a target="_blank" href="./rouh/english" title="Rouh">Rouh</a>
-		<a target="_blank" href="./jouzia/english" title="Jouzia">Jouzia</a>
-                <a target="_blank" href="./query/english" title="Query">Query</a>
-                <a target="_blank" href="https://usuual.com/filtah" title="Filtah">Filtah</a>
-		<a target="_blank" href="/meccah/" title="Meccah">Meccah</a>
+
+                <div class="project rouh">
+                    <p title="Rouh">Rouh</p>
+
+                    
+                    <div class="project__links">
+                        <a target="_blank" href="./rouh/english" title="Rouh">Demo</a>
+                        <a target="_blank" href="https://www.instagram.com/p/C6PbXSmsWp7/" title="Rouh">Info</a>
+                    </div>
+
+                </div>
+
+                <div class="project jouzia">
+                    <p title="Jouzia">Jouzia</p>
+
+                    
+                    <div class="project__links">
+                        <a target="_blank" href="./jouzia/english" title="Jouzia">Demo</a>
+                        <a target="_blank" href="https://www.instagram.com/p/C5Czi6DuO_j/" title="Jouzia">Info</a>
+                    </div>
+
+                </div>
+
+                <div class="project filtah">
+                    <p title="Filtah">Filtah</p>
+
+                    
+                    <div class="project__links">
+                        <a target="_blank" href="https://usuual.com/filtah" title="Filtah">Demo</a>
+                        <a target="_blank" href="https://www.instagram.com/p/C5iX13QOSrK/" title="Filtah">Info</a>
+                    </div>
+
+                </div>
+
+                <div class="project query">
+                    <p title="Query">Query</p>
+                    
+                    <div class="project__links">
+                        <a target="_blank" href="https://usuual.com/query/english" title="Query">Demo</a>
+                    </div>
+
+                </div>
+            
             </nav>
 
         </div>
@@ -181,7 +277,7 @@
 
         <nav class="socials">
 
-	    <a target="_blank" title="Shopping" href="https://store.usuual.com/"><img src="./assets/cart-shopping-solid.svg" alt=""/> </a>
+	        <a target="_blank" title="Shopping" href="https://store.usuual.com/"><img src="./assets/cart-shopping-solid.svg" alt=""/> </a>
             <a target="_blank" title="Shopping" href="https://picalica.com/u/mustapha21"><img src="./assets/cart-shopping-solid.svg" alt=""></a>
             <a target="_blank" title="Instagram" href="https://instagram.com/usuual.ltd"><img src="./assets/instagram.svg" alt=""></a>
             <a target="_blank" title="Tiktok" href="https://www.tiktok.com/@usuual.ltd/"><img src="./assets/tiktok.svg" alt=""></a>
